@@ -25,7 +25,9 @@ Descheduler, based on its policy, finds pods that can be moved and evicts them.
 
 Please note, in current implementation, descheduler does not schedule replacement of evicted pods but relies on the default scheduler for that.
 
-The Descheduler Operator supported by Redhat has to be installed (in current version in a pre-created namespace : ).
+## Openshift Descheduler Operator
+
+The Descheduler Operator supported by Redhat has to be installed (in current version in a pre-created namespace : openshift-kube-descheduler-operator).
 
 The Operator will not permit all options directly available from the upstream config.
 
@@ -53,5 +55,8 @@ This is what the Descheduler will do, see constraints are not valid any more and
 
 ## Pod Life Time
 
+Interesting when you want to limit a pod life time.
+
 ## Pod high restart failure
 
+Force pod destruction hoping the new pod could be working in another context
